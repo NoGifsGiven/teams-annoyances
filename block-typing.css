@@ -1,0 +1,44 @@
+/* Microsoft Teams typing indicator selectors */
+
+/* New Teams (teams.microsoft.com V2) */
+[data-tid="typing-indicator"],
+[data-tid="chat-typing-indicator"],
+[data-tid="typingindicator"],
+div[class*="typingIndicator"],
+div[class*="TypingIndicator"],
+div[class*="typing-indicator"],
+
+/* Legacy Teams selectors */
+.ts-typing-indicator,
+.typing-indicator,
+div[class*="typingindicator" i],
+
+/* The animated dots / "X is typing..." banner area */
+div[aria-label*="typing" i],
+div[role="status"][aria-label*="typing" i],
+span[class*="typing" i]:not(input):not(textarea),
+
+/* Typing balls animation SVG */
+img[src*="typing-balls-dark.svg"],
+
+/* Copilot compose entry point (tag, class, id, name, or data/aria attributes) */
+open-compose-copilot,
+[class*="open-compose-copilot" i],
+[id*="open-compose-copilot" i],
+[name*="open-compose-copilot" i],
+[data-tid*="open-compose-copilot" i],
+[aria-label*="open-compose-copilot" i],
+
+/* Suggested schedule message delivery button */
+suggested-schedule-message-delivery-button,
+[class*="suggested-schedule-message-delivery-button" i],
+[id*="suggested-schedule-message-delivery-button" i],
+[name*="suggested-schedule-message-delivery-button" i],
+[data-tid*="suggested-schedule-message-delivery-button" i],
+[aria-label*="suggested-schedule-message-delivery-button" i] {
+  display: none !important;
+  visibility: hidden !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  pointer-events: none !important;
+}
